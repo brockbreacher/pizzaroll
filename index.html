@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script>
+var audio = new Audio("pizzaroll.mp3");
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+
+var count = 0;
+
+function a() {
+  count++;
+  if (count == 5)
+    audio2.play()
+}
+
+var audio2 = new Audio("pizzarolls.mp3");
+
+audio2.oncanplaythrough = function(){
+audio2.play();
+}
+
+</script>
+
+<head>
+
+<meta property="og:title" content="Pizza Roll." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pizzaroll.brbr.xyz" />
+<meta property="og:image" content="https://pizzaroll.brbr.xyz/pizzaroll.png" />
+<meta property="og:description" content="Pizza Roll." />
+<meta name="theme-color" content="#FF0000">
+
+<style>/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+</style>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Pizza Roll.</title>
+</head>
+<body>
+<center><input type="image" src="pizzaroll.png" onclick="audio.play()"></center>
+<center><h1><font size="+50"><p onclick="a()">Pizza Roll.</p></font></h1></center>
+</body>
+</html>
